@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Eddie Fisher</title>
+<meta name="description" content="Projets menés en BUT GEII : conception, analyse et réparation de cartes électroniques.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Eddie Fisher</a>
+    <nav><ul id="navlist"><li><a href="index.html">Accueil</a></li><li><a href="projets.html" class="active">Projets</a></li><li><a href="formation.html">Formation</a></li><li><a href="qui-suis-je.html">À propos</a></li><li><a href="experience.html">Expérience</a></li><li><a href="competences.html">Compétences</a></li></ul></nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a class="cv-btn" href="assets/CV_Eddie_Fisher.pdf" download>Mon CV</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<section class="page-head"><div class="wrap"><h1>Projets</h1><p>En GEII, nous travaillons beaucoup sur des projets qui sont orientés vers la conception, l'analyse et la réparation. Ainsi que des Travaux Dirigés et des TP. Voici dix projets sur lesquels j'ai travaillé.</p></div></section>
+<section class="block"><div class="wrap">
+  <div class="detail-block" style="margin-top:0"><h2>Concevoir &amp; implanter</h2>
+    <div class="proj-grid">
+      <div class="proj-card" data-idx="0" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/robot-suiveur.jpg" alt="Robot suiveur de ligne" loading="lazy"></div><div class="proj-body"><h3>Robot suiveur de ligne</h3><p>Deux versions : une commande analogique, et une commande numérique sur carte Nucleo (STM32).</p></div></div>
+      <div class="proj-card" data-idx="1" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/jipada.jpg" alt="Soudage carte Jipada" loading="lazy"></div><div class="proj-body"><h3>Soudage carte Jipada</h3><p>Montage selon le dossier de fabrication, test de continuité des pistes et des LED — premier projet de la formation.</p></div></div>
+      <div class="proj-card" data-idx="2" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/trackeur.jpg" alt="Tracker" loading="lazy"></div><div class="proj-body"><h3>Tracker</h3><p>Carte suivant une source lumineuse via un moteur pas à pas : analyse électronique, programmation puis présentation du fonctionnement.</p></div></div>
+      <div class="proj-card" data-idx="3" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/de10-lite.jpg" alt="Carte Altera DE10-Lite" loading="lazy"></div><div class="proj-body"><h3>Transmission d'un mot de 4 bits</h3><p>Simulation d'une erreur de transmission et correction par code de Hamming, sur une carte Altera DE10-Lite.</p></div></div>
+      <div class="proj-card" data-idx="4" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb placeholder">Photo à venir</div><div class="proj-body"><h3>Capteur de température PT100</h3><p>Conception d'un montage de mesure autour d'une sonde PT100, sous KiCad.</p></div></div>
+      <div class="proj-card" data-idx="5" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/malaxeur.jpg" alt="Commande de malaxeur" loading="lazy"></div><div class="proj-body"><h3>Commande de malaxeur</h3><p>Interface de commande de la vitesse, du sens de rotation et de la position d'arrêt, sous Control Expert.</p></div></div>
+      <div class="proj-card" data-idx="6" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/testeur-batterie.png" alt="Testeur de batterie" loading="lazy"></div><div class="proj-body"><h3>Testeur de batterie</h3><p>Réalisé avec Youri Figuié : conception d'un circuit capable d'indiquer le niveau d'une batterie via trois LED de couleurs différentes, avec un seuil intermédiaire réglable par potentiomètre.</p></div></div>
+    </div></div>
+  <div class="detail-block"><h2>Vérifier &amp; maintenir</h2>
+    <div class="proj-grid">
+      <div class="proj-card" data-idx="7" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/de-electronique-v2.jpg" alt="Dé électronique" loading="lazy"></div><div class="proj-body"><h3>Dé électronique</h3><p>Analyse du fonctionnement d'une carte, puis réparation d'une carte défectueuse similaire.</p></div></div>
+      <div class="proj-card" data-idx="8" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/recepteur-ir.jpg" alt="Transmission infra-rouge" loading="lazy"></div><div class="proj-body"><h3>Transmission infra-rouge</h3><p>Analyse et réparation directe d'une carte de transmission infra-rouge défectueuse.</p></div></div>
+      <div class="proj-card" data-idx="9" tabindex="0" role="button" aria-haspopup="dialog"><div class="thumb"><img src="assets/img/schema-habitation-1.png" alt="Schéma électrique de l'habitation" loading="lazy"></div><div class="proj-body"><h3>Installation électrique d'une habitation</h3><p>Durant ce projet, j'ai dû analyser l'installation électrique de mon habitation afin d'en réaliser le schéma sous QElectrotech. J'ai aussi rédigé un rapport de cette analyse détaillant le respect des normes NFC 15-100.</p></div></div>
+    </div></div>
+</div></section>
+<section class="block" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p style="opacity:.85;max-width:60ch">En recherche d'une alternance dès l'automne 2027, et d'un stage de 2 à 3 mois à partir de mai 2027. N'hésitez pas à me contacter.</p>
+    <div class="contact-grid">
+      <div class="c-card"><div class="label">Email personnel</div><a href="mailto:eddie.fisher3107@gmail.com">eddie.fisher3107@gmail.com</a></div>
+      <div class="c-card"><div class="label">Email universitaire</div><a href="mailto:eddie.fisher@etu.umontpellier.fr">eddie.fisher@etu.umontpellier.fr</a></div>
+      <div class="c-card"><div class="label">Téléphone</div><p>07 84 24 44 99</p></div>
+      <div class="c-card"><div class="label">LinkedIn</div><a href="http://www.linkedin.com/in/eddie-fisher-b6264b399" target="_blank" rel="noopener">eddie-fisher-b6264b399</a></div>
+    </div>
+  </div>
+</section>
+<div class="modal-overlay" id="projModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+    <div class="modal-top">
+      <div class="modal-photo" id="modalPhoto">
+        <div class="modal-photo-track" id="modalPhotoTrack"></div>
+        <div class="modal-photo-empty" id="modalEmpty" style="display:none">Photo à venir</div>
+        <button class="modal-nav prev" id="modalPrev" aria-label="Photo précédente">‹</button>
+        <button class="modal-nav next" id="modalNext" aria-label="Photo suivante">›</button>
+        <div class="modal-dots" id="modalDots"></div>
+      </div>
+      <div class="modal-resume">
+        <h3 id="modalTitle"></h3>
+        <div id="modalResume"></div>
+      </div>
+    </div>
+    <div class="modal-bottom" style="grid-template-columns:1fr">
+      <div><span class="modal-label">Outils utilisés</span><div class="modal-tagcloud" id="modalTools"></div></div>
+    </div>
+  </div>
+</div>
+<footer>Eddie Fisher — 2026</footer>
+<script src="assets/main.js"></script>
+<script>
+// =====================================================================
+//  CONTENU DES FENÊTRES DE PROJET (pop-ups)
+//  Pour modifier un texte : change la ligne  resume: "..."  du projet.
+//  - "\n\n" dans un texte = nouveau paragraphe
+//  - images : liste de photos (plusieurs photos = carrousel)
+//  - tools  : liste des outils affichés sous "Outils utilisés"
+//  - competences : pas encore affiché sur le site (réservé pour plus tard)
+//  L'ordre ci-dessous doit rester le même que celui des cartes de la page.
+// =====================================================================
+const PROJECTS = [
+  // ---- Projet 1 : Robot suiveur de ligne
+  {
+    title: "Robot suiveur de ligne",
+    images: ["assets/img/robot-suiveur.jpg"],
+    resume:
+      "L'objectif était de concevoir un système capable de piloter deux moteurs à partir de l'information de deux capteurs de lumière, en version analogique puis en version numérique.\n\nCe projet regroupe deux versions de la commande du robot suiveur de ligne.\n\nCommande analogique : nous avons dû concevoir un système capable de piloter deux moteurs, avec l'information sortie de deux capteurs de lumière. Nous avons testé individuellement chaque partie du système pour enfin l'implémenter sur une carte, en respectant des dimensions et règles de routage précises.\n\nCommande numérique : nous avons dû créer un programme implémenté sur une carte Nucleo qui permet de traiter l'information sortie des capteurs afin de commander les deux moteurs (avec des systèmes de DAC et ADC).\n\nPour ces deux projets, j'ai travaillé en binôme avec Youri Figuié.",
+    tools: ["Oscilloscope", "Multimètre", "Poste à souder", "KiCad", "CubeIDE", "Notion", "GitHub"],
+  },
+  // ---- Projet 2 : Soudage carte Jipada
+  {
+    title: "Soudage carte Jipada",
+    images: ["assets/img/jipada.jpg"],
+    resume:
+      "Ce projet fut le premier projet réalisé en GEII, et consistait à vérifier et assembler une carte d'interface entre des cartes filles et un micro-contrôleur.\n\nLa carte est une carte d'interface entre des cartes filles et un micro-contrôleur ; elle permet aussi l'affichage d'informations grâce aux LED, et des réglages grâce aux interrupteurs et aux potentiomètres. Nous avons dû vérifier la continuité des pistes avec un multimètre, puis souder les composants, et enfin vérifier le fonctionnement des LED et des potentiomètres.\n\nBien qu'un projet simple, nous avons dû utiliser cette carte à de nombreuses reprises, notamment pour le projet de capteur de température.\n\nJ'ai réalisé ce projet avec Youri Figuié.",
+    tools: ["Multimètre", "Poste à souder"],
+  },
+  // ---- Projet 3 : Tracker
+  {
+    title: "Tracker",
+    images: ["assets/img/trackeur.jpg"],
+    resume:
+      "L'objectif de ce projet était d'analyser un système de tracker de lumière, d'écrire un programme pour le piloter, pour finalement restituer notre travail sous forme de présentation orale.\n\nJ'ai réalisé ce projet dans un groupe de 5 étudiants : Gabin Lochard, Luis Causse, Youri Figuié, Sélian Suchon et moi-même.",
+    tools: ["LibreOffice", "Draw.io", "Notion", "GitHub", "CubeIDE", "Multimètre"],
+  },
+  // ---- Projet 4 : Transmission d'un mot de 4 bits
+  {
+    title: "Transmission d'un mot de 4 bits",
+    images: ["assets/img/de10-lite.jpg"],
+    resume:
+      "L'objectif de ce projet était de réaliser un système capable de corriger des erreurs de transmission sur un signal de 4 bits.\n\nNous avons d'abord réalisé une interface sur une carte Altera DE10-Lite, simulant la transmission de données (le signal réglé par 4 interrupteurs puis affiché sur 4 LED).\n\nEnsuite, nous avons réalisé un système simulant une erreur de transmission en inversant un bit (le bit inversé étant indiqué par 4 autres interrupteurs).\n\nEnfin, nous avons réalisé un système capable de corriger l'erreur de transmission grâce au code de Hamming.",
+    tools: ["Quartus", "LibreOffice", "Altera DE10-Lite"],
+  },
+  // ---- Projet 5 : Capteur de température PT100
+  {
+    title: "Capteur de température PT100",
+    images: [],
+    resume:
+      "Projet réalisé en binôme avec Youri Figuié : nous avons conçu une carte fille afin d'adapter la tension en sortie du capteur PT100 à un signal compréhensible par un micro-contrôleur. Nous avons ensuite affiché cette température sur les LED de la carte Jipada.",
+    tools: ["KiCad", "CubeIDE", "Poste à souder", "Multimètre", "Oscilloscope", "Notion"],
+  },
+  // ---- Projet 6 : Commande de malaxeur
+  {
+    title: "Commande de malaxeur",
+    images: ["assets/img/malaxeur.jpg"],
+    resume:
+      "L'objectif de ce projet a été de réaliser une interface de commande sous Control Expert pour contrôler la vitesse, le sens de rotation du malaxeur et sa position d'arrêt. De plus, elle devait afficher la température.\n\nRéalisé en binôme avec Youri Figuié.",
+    tools: ["Control Expert"],
+  },
+  // ---- Projet 7 : Testeur de batterie
+  {
+    title: "Testeur de batterie",
+    images: ["assets/img/testeur-batterie.png"],
+    resume:
+      "Nous avons dû réaliser une carte qui, lorsque branchée sur une batterie, indique son niveau de charge (total, intermédiaire ou bas) selon des seuils prédéfinis, avec le niveau intermédiaire réglable grâce à un potentiomètre.\n\nJ'ai réalisé ce projet avec Youri Figuié.",
+    tools: ["KiCad", "Multimètre", "Poste à souder"],
+  },
+  // ---- Projet 8 : Dé électronique
+  {
+    title: "Dé électronique",
+    images: ["assets/img/de-electronique-v2.jpg"],
+    resume:
+      "Analyse du fonctionnement d'une carte de dé électronique, puis réparation d'une carte défectueuse similaire.",
+    tools: ["Multimètre", "Oscilloscope"],
+  },
+  // ---- Projet 9 : Transmission infra-rouge
+  {
+    title: "Transmission infra-rouge",
+    images: ["assets/img/emetteur-ir.jpg", "assets/img/recepteur-ir.jpg"],
+    resume:
+      "Nous avons méthodiquement observé que chaque signal était celui attendu. Puis, une fois la panne localisée, nous avons changé le composant : dans notre cas, c'était la LED infrarouge qui était défectueuse.",
+    tools: ["Oscilloscope", "Multimètre"],
+  },
+  // ---- Projet 10 : Installation électrique d'une habitation
+  {
+    title: "Installation électrique d'une habitation",
+    images: [
+      "assets/img/schema-habitation-1.png",
+      "assets/img/schema-habitation-2.png",
+      "assets/img/schema-habitation-3.png",
+      "assets/img/schema-habitation-4.png",
+    ],
+    resume:
+      "J'ai dû réaliser une analyse du câblage électrique de mon habitation. À partir de cette analyse, j'ai vérifié la conformité de mon habitation à la norme NFC 15-100 et fait un rapport.",
+    tools: ["QElectrotech"],
+  },
+];
+// =====================================================================
+//  FONCTIONNEMENT DU POP-UP (inutile de modifier cette partie)
+// =====================================================================
+let curSlide = 0,
+  curProj = null;
+const overlay = document.getElementById("projModal");
+const track = document.getElementById("modalPhotoTrack");
+const dotsEl = document.getElementById("modalDots");
+const photoEl = document.getElementById("modalPhoto");
+function renderSlide() {
+  track.style.transform = `translateX(${-curSlide * 100}%)`;
+  [...dotsEl.children].forEach((d, i) => d.classList.toggle("on", i === curSlide));
+}
+function openProjectModal(i) {
+  const p = PROJECTS[i];
+  curProj = p;
+  curSlide = 0;
+  document.getElementById("modalTitle").textContent = p.title;
+  document.getElementById("modalResume").innerHTML = (p.resume || "")
+    .split("\n\n")
+    .map((par) => `<p>${par}</p>`)
+    .join("");
+  document.getElementById("modalTools").innerHTML = p.tools
+    .map((t) => `<span class="modal-tag">${t}</span>`)
+    .join("");
+  const emptyEl = document.getElementById("modalEmpty");
+  const prevBtn = document.getElementById("modalPrev"),
+    nextBtn = document.getElementById("modalNext");
+  if (p.images.length) {
+    emptyEl.style.display = "none";
+    track.style.display = "flex";
+    track.innerHTML = p.images.map((src) => `<img src="${src}" alt="${p.title}">`).join("");
+    dotsEl.innerHTML = p.images.map(() => `<span></span>`).join("");
+    const multi = p.images.length > 1;
+    dotsEl.style.display = multi ? "flex" : "none";
+    prevBtn.style.display = multi ? "block" : "none";
+    nextBtn.style.display = multi ? "block" : "none";
+  } else {
+    track.style.display = "none";
+    track.innerHTML = "";
+    dotsEl.innerHTML = "";
+    dotsEl.style.display = "none";
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    emptyEl.style.display = "flex";
+  }
+  renderSlide();
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+}
+function closeModal() {
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+}
+document.querySelectorAll(".proj-card").forEach((card) => {
+  card.addEventListener("click", () => openProjectModal(parseInt(card.dataset.idx)));
+  card.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") openProjectModal(parseInt(card.dataset.idx));
+  });
+});
+document.getElementById("modalClose").addEventListener("click", closeModal);
+overlay.addEventListener("click", (e) => {
+  if (e.target === overlay) closeModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+document.getElementById("modalPrev").addEventListener("click", () => {
+  if (curProj) {
+    curSlide = (curSlide - 1 + curProj.images.length) % curProj.images.length;
+    renderSlide();
+  }
+});
+document.getElementById("modalNext").addEventListener("click", () => {
+  if (curProj) {
+    curSlide = (curSlide + 1) % curProj.images.length;
+    renderSlide();
+  }
+});
+
+</script>
+
+</body>
+</html>

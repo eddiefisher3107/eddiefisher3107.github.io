@@ -1017,3 +1017,85 @@ nav ul a.active {
 .hero h1 {
   line-height: 1.2;
 }
+
+/* agrandissement d'une photo du pop-up */
+.modal-photo-track img {
+  cursor: zoom-in;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 18, 14, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 300;
+  cursor: zoom-out;
+}
+.lightbox.open {
+  display: flex;
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+.lightbox::after {
+  content: "×";
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+/* projet mis en avant : occupe toute une rangée, plus grand que les autres */
+.proj-card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+}
+.proj-card.featured .thumb {
+  flex: 0 0 42%;
+  aspect-ratio: auto;
+  min-height: 300px;
+}
+.proj-card.featured .proj-body {
+  padding: 36px 40px;
+  justify-content: center;
+}
+.proj-card.featured h3 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+.proj-card.featured p {
+  font-size: 1rem;
+  flex: 0 1 auto;
+  max-width: 52ch;
+}
+.proj-status {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+@media (max-width: 700px) {
+  .proj-card.featured {
+    flex-direction: column;
+  }
+  .proj-card.featured .thumb {
+    flex: none;
+    min-height: 200px;
+  }
+  .proj-card.featured .proj-body {
+    padding: 22px;
+  }
+}

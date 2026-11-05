@@ -1099,3 +1099,9 @@ nav ul a.active {
     padding: 22px;
   }
 }
+
+/* ligne d'outil sans logo : garde le nom aligné avec les autres */
+.tool-list.logo-list .logo-spacer {
+  width: 72px;
+  flex-shrink: 0;
+}
